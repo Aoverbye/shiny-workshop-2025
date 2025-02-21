@@ -34,7 +34,14 @@ body <- dashboardBody(
 
                    # background info box ----
                    box(width = NULL,
-                       includeMarkdown("text/top.md")
+                       includeMarkdown("text/top.md"),
+                       tags$img(src = "fish_map.jpg",
+                                alt = "photo of map of northern alaska showing fish creek watershed",
+                                style = "max-width: 100%;"),
+                       tags$h6("Map Source:",
+                               tags$a(href = "http://www.fishcreekwatershed.org/",
+                                                     "FCWO"),
+                               style = "text-align: center;")
 
                    ) # END backgroudn info box
 
